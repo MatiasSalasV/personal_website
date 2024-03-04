@@ -1,35 +1,24 @@
-"""Welcome to Reflex! This file outlines the steps to create a basic app."""
-
-from rxconfig import config
-
 import reflex as rx
-
-docs_url = "https://reflex.dev/docs/getting-started/introduction"
-filename = f"{config.app_name}/{config.app_name}.py"
-
-
-class State(rx.State):
-    """The app state."""
+import personal_website.styles.styles as styles
+import personal_website.utils as utils
+from personal_website.components.navbar import navbar
+from personal_website.pages import index
 
 
-def index() -> rx.Component:
-    return rx.center(
-        rx.theme_panel(),
-        rx.vstack(
-            rx.heading("Welcome to Reflex!", size="9"),
-            rx.text("Get started by editing ", rx.code(filename)),
-            rx.button(
-                "Check out our docs!",
-                on_click=lambda: rx.redirect(docs_url),
-                size="4",
-            ),
-            align="center",
-            spacing="7",
-            font_size="2em",
-        ),
-        height="100vh",
-    )
+app = rx.App(
+    stylesheets=styles.STYLESHEETS,
+    style=styles.BASE_STYLE,
+    head_components=[
+#         rx.script(
+#             src=f"https://www.googletagmanager.com/gtag/js?id={const.G_TAG}"),
+#         rx.script(
+#             f"""
+# window.dataLayer = window.dataLayer || [];
+# function gtag(){{dataLayer.push(arguments);}}
+# gtag('js', new Date());
+# gtag('config', '{const.G_TAG}');
+# """
+#         ),
+    ],
+)
 
-
-app = rx.App()
-app.add_page(index)

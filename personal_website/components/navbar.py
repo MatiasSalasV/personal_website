@@ -22,7 +22,7 @@ def navbar() -> rx.Component:
 
         rx.desktop_only(
             rx.link(
-                "PRUEBA",
+                "PRUEBA2222",
                 padding=styles.EMSize.DEFAULT.value,
             ),
             rx.link(

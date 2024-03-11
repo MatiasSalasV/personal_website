@@ -8,6 +8,12 @@ from personal_website.pages import index
 app = rx.App(
     stylesheets=styles.STYLESHEETS,
     style=styles.BASE_STYLE,
+    theme=rx.theme(
+        appearance="light", 
+        accentColor="cyan" ,
+        panelBackground="solid", 
+        radius="small"
+    ),
     head_components=[
 #         rx.script(
 #             src=f"https://www.googletagmanager.com/gtag/js?id={const.G_TAG}"),

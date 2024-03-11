@@ -14,7 +14,7 @@ def navbar() -> rx.Component:
                 rx.text("SV", as_="span", color=Color.PRIMARY.value),
                 style=styles.navbar_title_style
             ),
-            href="https://x.com",
+            href="/",
             is_external=True, #DESPUES CAMBIAR A FALSE Y PONER RUTA localhost:3000/
         ),
 
@@ -40,7 +40,8 @@ def navbar() -> rx.Component:
             rx.link(
                 "CONTÁCTAME",
                 style=styles.agenda_button
-            ),            
+            ),      
+            # rx.theme_panel(default_open=True)      
         ),
 
         rx.mobile_and_tablet(

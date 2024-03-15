@@ -23,7 +23,7 @@ jobs:
           python-version: '3.11'
 
       - name: Run build script
-        run: 
+        run: |
           chmod +x ./remote_build.sh
           ./remote_build.sh
 

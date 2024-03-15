@@ -22,6 +22,10 @@ def navbar() -> rx.Component:
 
         rx.desktop_only(
             rx.link(
+                "PRUEBA FINAL",
+                padding=styles.EMSize.DEFAULT.value,
+            ),
+            rx.link(
                 "INICIO",
                 padding=styles.EMSize.DEFAULT.value,
             ),

@@ -44,7 +44,7 @@ BASE_STYLE = {
 
     rx.link: {
         # "padding":Size.DEFAULT.value,
-        "color":TextColor.TEXT.value,
+        "color":TextColor.TITLE.value,
         "text_decoration": "none",
         "_hover": {
             "color":Color.PRIMARY.value,

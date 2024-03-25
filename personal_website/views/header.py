@@ -15,14 +15,31 @@ def header() -> rx.Component:
                 "BIENVENIDO", 
                 color=TextColor.TEXT.value
             ),
-            heading("Soy Matias Salas Vergara", True),
-            heading("un emprendedor digital"),
-            rx.text("""
-                I help my clients build powerful AI solutions to keep them one step ahead of the competition. 
-                With AI affecting every industry at a rapid pace, those who make bold strides have a chance to increase 
-                their market share. Sharing my knowledge with other entrepreneurs for free on YouTube.""", 
-                padding_y=styles.Size.SMALL.value  ,
-                color=TextColor.TEXT.value
+            heading("Soy Matias Salas Vergara"),
+            heading("tu aliado en la era digital"),
+            #  Transformo la complejidad tecnológica en ventaja competitiva para tu negocio, 
+            #         a través de la automatización y digitalización. 
+            # Te ayudo a sacar provecho de la tecnologia a través de la automatización y la digitalización de tu negocio
+            #         para estar un paso por delante de la competencia.
+                   
+            #         En una era donde la innovación tecnológica redefine constantemente las reglas 
+            #         del juego, los más innovadores y proactivos tienen la ventaja de expandir su 
+            #         influencia y capturar nuevas oportunidades.      
+            # En una era donde la innovación tecnológica redefine constantemente las reglas del juego, aquellos que 
+            #     dan pasos audaces tienen la ventaja de capturar nuevas oportunidades.  
+            rx.text(
+                """
+                Te ayudo a digitalizar y automatizar tu negocio para estar un paso por delante de la competencia.
+                Dado que la tecnologia afecta a todas las industrias, aquellos que dan pasos audaces tienen la ventaja 
+                de capturar nuevas oportunidades.
+                
+                
+                
+            
+                """, 
+                padding_y=styles.Size.SMALL.value ,
+                color=TextColor.TEXT.value,
+                max_width= "70ch",
             ),
             rx.flex(
                 rx.vstack(
@@ -33,9 +50,21 @@ def header() -> rx.Component:
                         color=TextColor.TEXT.value
                     ),     
                     rx.hstack(
-                        icon_link_button("linkedin", const.LINKEDIN_URL),
-                        icon_link_button("youtube",const.YOUTUBE_URL),
-                        icon_link_button("twitter", const.TWITTER_URL), 
+                        icon_link_button(
+                            "linkedin", 
+                            const.LINKEDIN_URL,
+                            "LinkedIn"
+                        ),
+                        icon_link_button(
+                            "youtube",
+                            const.YOUTUBE_URL,
+                            "YouTube"
+                        ),
+                        icon_link_button(
+                            "twitter", 
+                            const.TWITTER_URL,
+                            "Twitter"
+                        ), 
                         padding_bottom=styles.EMSize.LARGE.value
                     ),
                     align_items="start",
@@ -90,7 +119,7 @@ def header() -> rx.Component:
 
         rx.vstack(
             rx.box(
-                width="400px",
+                width="500px",
                 height="400px",
                 color="red",
                 bg=Color.SECONDARY.value,
@@ -114,7 +143,8 @@ def header() -> rx.Component:
         border_bottom = styles.border_bottom_color,
         align="center",
         justify="between",
-        padding_y = styles.EMSize.BIGGER.value
+        padding_y = styles.EMSize.BIGGER.value,
+        id="inicio"
         
     )
 

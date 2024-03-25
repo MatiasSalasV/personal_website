@@ -86,4 +86,5 @@ def agenda() -> rx.Component:
         border_bottom = styles.border_bottom_color,
         padding_y = styles.EMSize.BIGGER.value,
         align="center",
+        id="agenda"
     )

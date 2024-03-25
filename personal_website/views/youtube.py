@@ -43,5 +43,6 @@ def youtube() -> rx.Component:
         align="center",
         width="100%",
         border_bottom = styles.border_bottom_color,
-        padding_y = styles.EMSize.BIGGER.value
+        padding_y = styles.EMSize.BIGGER.value,
+        id="youtube"
     )

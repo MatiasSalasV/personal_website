@@ -18,9 +18,21 @@ def footer() -> rx.Component:
                 is_external=True, #DESPUES CAMBIAR A FALSE Y PONER RUTA localhost:3000/
             ),
             rx.hstack(
-                icon_link_button("linkedin", const.LINKEDIN_URL),
-                icon_link_button("youtube",const.YOUTUBE_URL),
-                icon_link_button("twitter", const.TWITTER_URL), 
+                icon_link_button(
+                    "linkedin", 
+                    const.LINKEDIN_URL,
+                    "LinkedIn"
+                ),
+                icon_link_button(
+                    "youtube",
+                    const.YOUTUBE_URL,
+                    "YouTube"
+                ),
+                icon_link_button(
+                    "twitter", 
+                    const.TWITTER_URL,
+                    "Twitter"
+                ), 
                 padding_bottom=styles.EMSize.LARGE.value
             ),
             height="100%",

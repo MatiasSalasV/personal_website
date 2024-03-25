@@ -15,35 +15,35 @@ def navbar() -> rx.Component:
                 style=styles.navbar_title_style
             ),
             href="/",
-            is_external=True, #DESPUES CAMBIAR A FALSE Y PONER RUTA localhost:3000/
+            is_external=False, #DESPUES CAMBIAR A FALSE Y PONER RUTA localhost:3000/
         ),
 
         rx.spacer(),
 
         rx.desktop_only(
             rx.link(
-                "PRUEBA FINAL",
-                padding=styles.EMSize.DEFAULT.value,
-            ),
-            rx.link(
                 "INICIO",
                 padding=styles.EMSize.DEFAULT.value,
+                href="#inicio"
             ),
             rx.link(
                 "LO QUE HAGO",
-                padding=styles.EMSize.DEFAULT.value
+                padding=styles.EMSize.DEFAULT.value,
+                href="#features"
             ),
             rx.link(
                 "YOUTUBE",
-                padding=styles.EMSize.DEFAULT.value
+                padding=styles.EMSize.DEFAULT.value,
+                href="#youtube"
             ),
-            rx.link(
-                "RESUMEN",
-                padding=styles.EMSize.DEFAULT.value
-            ),
+            # rx.link(
+            #     "RESUMEN",
+            #     padding=styles.EMSize.DEFAULT.value
+            # ),
             rx.link(
                 "CONTÁCTAME",
-                style=styles.agenda_button
+                style=styles.agenda_button,
+                href="#agenda"
             ),      
             # rx.theme_panel(default_open=True)      
         ),
@@ -90,20 +90,28 @@ def navbar() -> rx.Component:
                             rx.vstack(
                                 rx.link(
                                     "INICIO",
-                                    padding_y=styles.EMSize.SMALL.value
+                                    padding_y=styles.EMSize.SMALL.value,
+                                    href="#inicio"
                                 ),
                                 rx.link(
                                     "LO QUE HAGO",
-                                    padding_y=styles.EMSize.SMALL.value
+                                    padding_y=styles.EMSize.SMALL.value,
+                                    href="#features"
                                 ),
                                 rx.link(
                                     "YOUTUBE",
-                                    padding_y=styles.EMSize.SMALL.value
+                                    padding_y=styles.EMSize.SMALL.value,
+                                    href="#youtube"
                                 ),
+                                # rx.link(
+                                #     "RESUMEN",
+                                #     padding_y=styles.EMSize.SMALL.value
+                                # ),
                                 rx.link(
-                                    "RESUMEN",
-                                    padding_y=styles.EMSize.SMALL.value
-                                ),
+                                    "CONTÁCTAME",
+                                    style=styles.agenda_button,
+                                    href="#agenda"
+                                ),   
                                 # agenda_button("RESERVA TU HORA", "https://x.com"),
                                 align_items="start",
                                 padding_y=styles.EMSize.BIG.value,
@@ -115,9 +123,21 @@ def navbar() -> rx.Component:
                             ),
                         
                             rx.hstack(
-                                icon_link_button("linkedin", const.LINKEDIN_URL),
-                                icon_link_button("youtube",const.YOUTUBE_URL),
-                                icon_link_button("twitter", const.TWITTER_URL), 
+                                icon_link_button(
+                                    "linkedin", 
+                                    const.LINKEDIN_URL,
+                                    "LinkedIn"
+                                ),
+                                icon_link_button(
+                                    "youtube",
+                                    const.YOUTUBE_URL,
+                                    "YouTube"
+                                ),
+                                icon_link_button(
+                                    "twitter", 
+                                    const.TWITTER_URL,
+                                    "Twitter"
+                                ), 
                             ),
                         ),
                         

@@ -27,15 +27,31 @@ def header() -> rx.Component:
             #         influencia y capturar nuevas oportunidades.      
             # En una era donde la innovación tecnológica redefine constantemente las reglas del juego, aquellos que 
             #     dan pasos audaces tienen la ventaja de capturar nuevas oportunidades.  
+            # Ayudo a mis clientes a crear potentes soluciones de IA para mantenerlos un paso por delante de la competencia. 
+            #     Dado que la IA afecta a todas las industrias a un ritmo rápido, aquellos que dan pasos audaces tienen la oportunidad 
+            #     de aumentar su participación de mercado. Compartiendo mis conocimientos con otros emprendedores de forma gratuita en YouTube.
+                
+                
+            #     Te ayudo a sacar provecho de la tecnología y la IA para mantenerte un paso por delante de la competencia.
+            #     Dado que la IA avanza a un ritmo acelerado, aquellos que dan pasos audaces tienen la oportunidad de aumentar 
+            #     su participación de mercado. Además, comparto mis conocimientos con otros emprendedores a través de YouTube.
+
+
+            #     Transformo tu negocio para la era digital, enfocándome en soluciones de automatización e inteligencia artificial 
+            #     que te colocan a la vanguardia del mercado. Al identificar y aplicar las herramientas más avanzadas y específicas 
+            # #     para tu industria, te ayudo a sobrepasar a la competencia con estrategias audaces y eficientes. 
+            #            Te ayudo a automatizar tu negocio gracias a la tecnologia y la IA para estar un paso por delante de la competencia.
+            #     Dado que la IA avanza a un ritmo acelerado, aquellos que dan pasos audaces tienen la oportunidad de aumentar 
+            # #     su participación de mercado. Comparto mis conocimientos con otros emprendedores a través de YouTube.
+            #  Digitalizo y automatizo tu negocio con IA, dándote la ventaja de liderar tu sector. En esta era tecnológica, 
+            #     quienes pasos audaces, aumentan su participación de mercado. Además, comparto mis conocimientos con otros 
+            #     emprendedores a través de YouTube.
             rx.text(
                 """
-                Te ayudo a digitalizar y automatizar tu negocio para estar un paso por delante de la competencia.
-                Dado que la tecnologia afecta a todas las industrias, aquellos que dan pasos audaces tienen la ventaja 
-                de capturar nuevas oportunidades.
-                
-                
-                
-            
+                Digitalizo y automatizo tu negocio con IA, dándote la ventaja de liderar tu sector. En esta era tecnológica, 
+                quien innova, gana. Además, comparto mis conocimientos con otros emprendedores a través de YouTube.
+
+               
                 """, 
                 padding_y=styles.Size.SMALL.value ,
                 color=TextColor.TEXT.value,
@@ -112,7 +128,7 @@ def header() -> rx.Component:
                 padding_bottom=styles.EMSize.BIG.value,
                 flex_direction=["column","row"],
             ),
-            
+            width="100%",
             align_items="start",
             padding_y=styles.EMSize.DEFAULT.value,
         ),

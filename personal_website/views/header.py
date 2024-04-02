@@ -46,10 +46,15 @@ def header() -> rx.Component:
             #  Digitalizo y automatizo tu negocio con IA, dándote la ventaja de liderar tu sector. En esta era tecnológica, 
             #     quienes pasos audaces, aumentan su participación de mercado. Además, comparto mis conocimientos con otros 
             #     emprendedores a través de YouTube.
+            # Digitalizo y automatizo tu negocio con IA, dándote la ventaja de liderar tu sector. Considero que en esta era tecnológica, 
+            #     quien se adapta, gana. Además, comparto mis conocimientos con otros emprendedores a través de YouTube.
             rx.text(
                 """
-                Digitalizo y automatizo tu negocio con IA, dándote la ventaja de liderar tu sector. En esta era tecnológica, 
-                quien innova, gana. Además, comparto mis conocimientos con otros emprendedores a través de YouTube.
+                
+
+                Digitalizo y automatizo tu negocio con IA, brindándote la ventaja de liderar tu sector. En esta era tecnológica, 
+                considero que quien se adapta, gana. Además, comparto mis conocimientos con otros emprendedores a través de YouTube.
+
 
                
                 """, 

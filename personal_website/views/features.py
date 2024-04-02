@@ -31,7 +31,7 @@ def features() -> rx.Component:
                 "Desarrollo Web", 
                 # Tu presencia online, rediseñada. Creo landing pages que no solo capturan la esencia de tu marca, sino que están optimizadas para convertir. 
                 # Cada página es una obra de arte digital, diseñada desde cero para reflejar tu identidad única y conectar con tu audiencia.
-                "Texto para el primer card de pucartexto para el primer card de pucartexto para el primer card de pucar",
+                "Diseño y desarrollo páginas web a medida para establecer tu presencia en internet y potenciar tu marca.",
                 "#agenda",
                 False
             ),

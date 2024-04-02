@@ -84,7 +84,7 @@ def navbar() -> rx.Component:
                                 width="100%"
                             ),
                             rx.text(
-                                "I help my clients build powerful AI solutions to keep them one step ahead of the competition.",
+                                "Digitalizo y automatizo tu negocio con IA, brindándote la ventaja de liderar tu sector.",
                                 style=styles.text_presentation_mobile,
                             ),
                             rx.vstack(

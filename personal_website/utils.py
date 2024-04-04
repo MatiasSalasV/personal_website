@@ -15,7 +15,7 @@ _meta = [
 
 # Index
 
-index_title = "Matias Salas Vergara | Te comparto mi forma de vida"
+index_title = "Matias Salas V | Desarrollo Web, Automatización con IA"
 index_description = "Hola, mi nombre es Matias Salas Vergara. Soy un ingeniero informático que vive la vida en base a 3 pilares fundamentales y divulgador."
 
 index_meta = [

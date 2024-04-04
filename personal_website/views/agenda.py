@@ -16,7 +16,7 @@ def agenda() -> rx.Component:
                     color=Color.PRIMARY.value,
                     trim="both"
                 ),
-                heading("Consultoria Variada"),
+                heading("Solicita tu servicio"),
                 padding_bottom=styles.EMSize.LARGE.value,
             ),
 
@@ -43,14 +43,17 @@ def agenda() -> rx.Component:
                                 "background_color":Color.PRIMARY.value,
                             }
                         ),
-                        # box_shadow="0px 4px 6px rgba(0, 0, 0, 0.1)", # REVISAR SI SE SACA O NO DEBIDO AL COLOR DE LA LINEA
                     ),
                     rx.tabs.content(
                         tab_content(
-                            "Consultoria de PRUEBA",
-                            "40 Minutos via Discord",
-                            "$40.000",
-                            "Esta es una llamada que se hace por medio de la herramienta discord, ya que es la que ocupo para hacer llamadas"
+                            "Asesoría en Digitalización",
+                            "45 minutos via Google Meet",
+                            "$25.000",
+                            """
+                                Una sesión para abordar tus desafíos y oportunidades en la era digital. 
+                                Juntos analizaremos tus metas, tus recursos y desarrollaremos una estrategia efectiva 
+                                para adaptar tu negocio.
+                            """
                         ),                      
                         border_radius="5px",
                         value="simple",
@@ -59,10 +62,15 @@ def agenda() -> rx.Component:
                     ),
                     rx.tabs.content(
                         tab_content(
-                            "Titulo de prueba",
-                            "Subtitulo de prueba",
-                            "$150.000",
-                            "Esta es una llamada que se hace por medio de la herramienta discord, ya que es la que ocupo para hacer llamadas"
+                            "Pack de Transformación Digital",
+                            "45 minutos via Google Meet",
+                            "$100.000",
+                            """
+                                Además de la asesoría, se abarca el desarrollo de una página web estática 
+                                y la implementación de un chatbot personalizado, adaptados específicamente a las necesidades 
+                                de tu negocio.
+                                
+                            """
                         ),
                         border_radius="5px",
                         value="completo",

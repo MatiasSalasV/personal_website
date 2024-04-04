@@ -8,7 +8,10 @@ def tab_content(title:str, subtitle:str, price:str, description:str) -> rx.Compo
         rx.hstack(
             rx.vstack(
                 heading(title),
-                rx.text(f"{subtitle}"),
+                rx.text(
+                    f"{subtitle}",
+                    color = TextColor.SECONDARY_TEXT.value
+                ),
             ), 
             rx.link(
                 f"{price}",
@@ -19,7 +22,8 @@ def tab_content(title:str, subtitle:str, price:str, description:str) -> rx.Compo
         ),
         rx.text(
             f"{description}",
-            padding_y=styles.EMSize.DEFAULT.value
+            padding_y=styles.EMSize.LARGE.value,
+            # max_width= "50ch",
         ),
         rx.chakra.responsive_grid(
             rx.vstack( 
@@ -30,7 +34,8 @@ def tab_content(title:str, subtitle:str, price:str, description:str) -> rx.Compo
                         style={"display": "inline"},
                         margin_right=styles.EMSize.SMALL.value
                     ),
-                    "texto"
+                    "Garantía de devolución",
+                    color = TextColor.SECONDARY_TEXT.value
                 ),
                 rx.text(
                     rx.icon(
@@ -39,7 +44,8 @@ def tab_content(title:str, subtitle:str, price:str, description:str) -> rx.Compo
                         style={"display": "inline"},
                         margin_right=styles.EMSize.SMALL.value
                     ),
-                    "texto"
+                    "Soporte continuo por correo",
+                    color = TextColor.SECONDARY_TEXT.value
                 ),
                 align_items="start",
                 margin_bottom=styles.EMSize.SMALL.value
@@ -52,7 +58,8 @@ def tab_content(title:str, subtitle:str, price:str, description:str) -> rx.Compo
                         style={"display": "inline"},
                         margin_right=styles.EMSize.SMALL.value
                     ),
-                    "texto"
+                    "Invita hasta 2 personas",
+                    color = TextColor.SECONDARY_TEXT.value
                 ),
                 rx.text(
                     rx.icon(
@@ -61,7 +68,8 @@ def tab_content(title:str, subtitle:str, price:str, description:str) -> rx.Compo
                         style={"display": "inline"},
                         margin_right=styles.EMSize.SMALL.value
                     ),
-                    "texto"
+                    "Reagenda sin costo",
+                    color = TextColor.SECONDARY_TEXT.value
                 ),
                 align_items="start",
                 margin_bottom=styles.EMSize.SMALL.value
@@ -77,7 +85,9 @@ def tab_content(title:str, subtitle:str, price:str, description:str) -> rx.Compo
                     color=Color.PRIMARY.value,
                     style={"display": "inline"},
                 ),
-                style=styles.agenda_button, #ESTE SE DEBERIA MODIFICAR PARA QUE NO SE LEVANTE
+                href="https://calendly.com/msalasvergara2/asesoria_digital",
+                is_external=True,
+                style=styles.agenda_button,
             ),
             rx.chakra.responsive_grid(
                 rx.vstack( 

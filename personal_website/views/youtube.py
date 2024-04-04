@@ -17,21 +17,21 @@ def youtube() -> rx.Component:
         rx.chakra.responsive_grid(
             card_video(
                 "https://i.blogs.es/9b19ad/youtube/450_1000.webp",
-                "How to Build a Custom Knowledge ChatGPT Clone in 5 Minutes" ,
-                "In this video I'll be showing you how to create ChatGPT style custom knowledge chatbots using LlamaIndex/GPTIndex. You can create useful chatbot agents for your business by loading in your own data, eg for customer service chatbots or a range of other uses that LlamaIndex/GPTIndex.",   
-                "https://www.youtube.com/embed/ydjRYmM19DY" 
+                "Titulo de muestra para previsualizar sección" ,
+                "Este seria un texto correspondiente a la descripción del video que se visualizaria en la card para que el usuario tenga un breve contexto de lo que se trata el video que seleccionó para ver en la pagina web para que redirija al contenido de youtube",   
+                "https://www.youtube.com/embed/xcJtL7QggTI" 
             ),
             card_video(
                 "https://i.blogs.es/9b19ad/youtube/450_1000.webp",
-                "How to Build a Custom Knowledge ChatGPT Clone in 5 Minutes" ,
-                "In this video I'll be showing you how to create ChatGPT style custom knowledge chatbots using LlamaIndex/GPTIndex. You can create useful chatbot agents for your business by loading in your own data, eg for customer service chatbots or a range of other uses that LlamaIndex/GPTIndex.",   
-                "https://www.youtube.com/embed/ydjRYmM19DY" 
+                "Titulo de muestra para previsualizar secció" ,
+                "Este seria un texto correspondiente a la descripción del video que se visualizaria en la card para que el usuario tenga un breve contexto de lo que se trata el video que seleccionó para ver en la pagina web para que redirija al contenido de youtube",   
+                "https://www.youtube.com/embed/xcJtL7QggTI" 
             ),
             card_video(
                 "https://i.blogs.es/9b19ad/youtube/450_1000.webp",
-                "How to Build a Custom Knowledge ChatGPT Clone in 5 Minutes" ,
-                "In this video I'll be showing you how to create ChatGPT style custom knowledge chatbots using LlamaIndex/GPTIndex. You can create useful chatbot agents for your business by loading in your own data, eg for customer service chatbots or a range of other uses that LlamaIndex/GPTIndex.",   
-                "https://www.youtube.com/embed/ydjRYmM19DY" 
+                "Titulo de muestra para previsualizar secció" ,
+                "Este seria un texto correspondiente a la descripción del video que se visualizaria en la card para que el usuario tenga un breve contexto de lo que se trata el video que seleccionó para ver en la pagina web para que redirija al contenido de youtube",   
+                "https://www.youtube.com/embed/xcJtL7QggTI" 
             ),
             spacing="5",
             padding_top=styles.EMSize.LARGE.value,

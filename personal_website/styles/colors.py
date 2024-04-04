@@ -15,3 +15,4 @@ class TextColor(Enum):
     # BODY = "#505050"
     TITLE = "#1e2125"
     TEXT = "#505050"
+    SECONDARY_TEXT = "#5F5F5F"

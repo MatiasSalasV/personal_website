@@ -16,7 +16,7 @@ _meta = [
 # Index
 
 index_title = "Matias Salas V | Desarrollo Web, Automatización con IA"
-index_description = "Hola, mi nombre es Matias Salas Vergara. Soy un ingeniero informático que vive la vida en base a 3 pilares fundamentales y divulgador."
+index_description = "Hola, soy Matias Salas Vergara. Digitalizo y automatizo tu negocio con IA, brindándote la ventaja de liderar tu sector. En esta era tecnológica, considero que quien se adapta, gana. Además, comparto mis conocimientos con otros emprendedores a través de YouTube."
 
 index_meta = [
     {"name": "og:title", "content": index_title},
